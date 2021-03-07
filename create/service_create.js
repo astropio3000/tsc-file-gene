@@ -1,16 +1,16 @@
 const makeFile = require('../lib/makefile.js');
 const stringToGood = require('../lib/goodstring.js');
 
-const TYPE = 'interface';
+const TYPE = 'service';
 
-exports.interfaceCreate = async(nazwa) => {
+exports.serviceCreate = async(nazwa) => {
     const names = await stringToGood.stringToGood(nazwa);
-    let text = await makeInterface(names.name);
+    let text = await makeService(names.name);
     await makeFile.makeFile(names.file, text, TYPE);
 }
 
-function makeInterface(name) {
-    return "interface " + name + "{ \n" +
+function makeService(name) {
+    return "class " + name + "Service" + "{ \n" +
         "   \n" +
         "}\n";
 }

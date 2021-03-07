@@ -6,7 +6,6 @@ const TYPE = 'model';
 exports.modelCreate = async(nazwa) => {
     const names = await stringToGood.stringToGood(nazwa);
     let text = await makeModel(names.name);
-    console.log(text);
     await makeFile.makeFile(names.file, text, TYPE);
 }
 

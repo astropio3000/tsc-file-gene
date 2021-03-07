@@ -1,6 +1,6 @@
 {
     "name": "tsc-file-gene",
-    "version": "1.1.2",
+    "version": "1.1.8",
     "description": "",
     "directories": {
         "lib": "lib"
@@ -13,7 +13,7 @@
     "bin": {
         "tfg": "index.js"
     },
-    "keywords": ["generator", "TypeScript", "ts"],
+    "keywords": ["generator", "TypeScript", "ts", "file"],
     "bugs": {
         "url": "https://github.com/astropio3000/tsc-file-gene/issues"
     },
