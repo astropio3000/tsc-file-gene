@@ -10,7 +10,7 @@ exports.enumCreate = async(nazwa) => {
 }
 
 function makeEnum(name) {
-    return "enum " + name + "{ \n" +
+    return "export enum " + name + "{ \n" +
         "   \n" +
         "}\n";
 }

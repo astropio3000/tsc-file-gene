@@ -10,7 +10,7 @@ exports.interfaceCreate = async(nazwa) => {
 }
 
 function makeInterface(name) {
-    return "interface " + name + "{ \n" +
+    return "export interface " + name + "{ \n" +
         "   \n" +
         "}\n";
 }

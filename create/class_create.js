@@ -10,7 +10,7 @@ exports.classCreate = async(nazwa) => {
 }
 
 function makeClass(name) {
-    return "class " + name + "{ \n" +
+    return "export class " + name + "{ \n" +
         "   constructor(){\n" +
         "       \n" +
         "   }\n" +

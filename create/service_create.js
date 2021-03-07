@@ -10,7 +10,7 @@ exports.serviceCreate = async(nazwa) => {
 }
 
 function makeService(name) {
-    return "class " + name + "Service" + "{ \n" +
+    return "export class " + name + "Service" + "{ \n" +
         "   \n" +
         "}\n";
 }

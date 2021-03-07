@@ -10,7 +10,7 @@ exports.modelCreate = async(nazwa) => {
 }
 
 function makeModel(name) {
-    return "interface " + name + "Model" + "{ \n" +
+    return "export interface " + name + "Model" + "{ \n" +
         "   \n" +
         "}\n";
 }
